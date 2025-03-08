@@ -74,6 +74,7 @@ public:
   bool is_ready(rcl_wait_set_t * wait_set) override;
   void execute(std::shared_ptr<void> & data) override;
   void add_to_wait_set(rcl_wait_set_t * wait_set) override;
+  void add_to_wait_set(rcl_wait_set_t & wait_set) override;
 
 private:
   rclcpp::Node & node_;

@@ -20,7 +20,7 @@
 #include <string>
 
 #include "gems/gxf_helpers/expected_macro_abstract.hpp"
-#include "magic_enum.hpp"  // NOLINT(build/include)
+#include "magic_enum/magic_enum.hpp"  // NOLINT(build/include)
 
 // This file contains the configuration to use the expected macro with different return types like
 // bool, int, std::optional (and in the future std::expected).

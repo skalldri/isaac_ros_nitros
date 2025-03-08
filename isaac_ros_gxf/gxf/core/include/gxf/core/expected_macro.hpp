@@ -21,7 +21,7 @@
 
 #include "gxf/core/common_expected_macro.hpp"
 #include "gxf/core/expected.hpp"
-#include "magic_enum.hpp"  // NOLINT(build/include)
+#include "magic_enum/magic_enum.hpp"  // NOLINT(build/include)
 
 //////////////////////////////////////////
 // Configuration for using bool as status:

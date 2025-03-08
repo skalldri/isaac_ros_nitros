@@ -32,6 +32,7 @@ license agreement from NVIDIA CORPORATION is strictly prohibited.
   <depend>isaac_ros_gxf</depend>
   <depend>gxf_isaac_optimizer</depend>
   <depend>gxf_isaac_message_compositor</depend>
+  <depend>ament_index_cpp</depend>
 
   <exec_depend>gxf_isaac_gxf_helpers</exec_depend>
   <exec_depend>gxf_isaac_sight</exec_depend>

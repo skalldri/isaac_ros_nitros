@@ -99,6 +99,12 @@ void NitrosPublisherWaitable::execute(std::shared_ptr<void> & data)
 void NitrosPublisherWaitable::add_to_wait_set(rcl_wait_set_t * wait_set)
 {
   std::lock_guard<std::mutex> lock(guard_condition_mutex_);
+  guard_condition_.add_to_wait_set(*wait_set);
+}
+
+void NitrosPublisherWaitable::add_to_wait_set(rcl_wait_set_t & wait_set)
+{
+  std::lock_guard<std::mutex> lock(guard_condition_mutex_);
   guard_condition_.add_to_wait_set(wait_set);
 }
 
